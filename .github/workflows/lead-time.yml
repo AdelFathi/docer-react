@@ -16,4 +16,4 @@ jobs:
         with:
           workflows: 'CI/CD'
           default-branch: 'main'
-          number-of-days: 1
+          number-of-days: 0.0
