@@ -15,3 +15,5 @@ jobs:
         uses: DeveloperMetrics/lead-time-for-changes@main
         with:
           workflows: 'CI/CD'
+          default-branch: 'main'
+          number-of-days: 1
