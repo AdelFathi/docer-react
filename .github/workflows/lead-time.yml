@@ -1,0 +1,17 @@
+on:
+  create:
+    branches:
+      - master
+
+jobs:
+  lead-time:
+    runs-on: ubuntu-latest
+    name: Lead Time for Changes
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Calculate Lead Time
+        uses: DeveloperMetrics/lead-time-for-changes@main
+        with:
+          workflows: 'CI/CD'
